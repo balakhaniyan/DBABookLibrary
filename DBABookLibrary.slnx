@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="DBABookLibrary.Api/DBABookLibrary.Api.csproj" />
+  <Project Path="DBABookLibrary.AppHost/DBABookLibrary.AppHost.csproj" />
+  <Project Path="DBABookLibrary.MigrationService/DBABookLibrary.MigrationService.csproj" />
+  <Project Path="DBABookLibrary.Migrations\DBABookLibrary.Migrations.csproj" />
+  <Project Path="DBABookLibrary.Model/DBABookLibrary.Model.csproj" />
+  <Project Path="DBABookLibrary.ReadRepository\DBABookLibrary.ReadRepository.csproj" />
+  <Project Path="DBABookLibrary.Service/DBABookLibrary.Service.csproj" />
+  <Project Path="DBABookLibrary.ServiceDefaults/DBABookLibrary.ServiceDefaults.csproj" />
+  <Project Path="DBABookLibrary.Utils/DBABookLibrary.Utils.csproj" />
+  <Project Path="DBABookLibrary.WriteRepository/DBABookLibrary.WriteRepository.csproj" />
+</Solution>

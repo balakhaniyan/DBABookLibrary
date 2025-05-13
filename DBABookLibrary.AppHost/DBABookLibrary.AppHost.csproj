@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.2.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>b0398ba2-72c3-4984-be32-9a89c067b9dc</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBABookLibrary.Api\DBABookLibrary.Api.csproj" />
+    <ProjectReference Include="..\DBABookLibrary.MigrationService\DBABookLibrary.MigrationService.csproj" />
+    <ProjectReference Include="..\DBABookLibrary.WriteRepository\DBABookLibrary.WriteRepository.csproj" />
+    <ProjectReference Include="..\DBABookLibrary.ReadRepository\DBABookLibrary.ReadRepository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.0" />
+    <PackageReference Include="Aspire.Hosting.MongoDB" Version="9.2.0" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.2.0" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="9.2.0" />
+    <PackageReference Include="OpenTelemetryCollector.Aspire.Hosting" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

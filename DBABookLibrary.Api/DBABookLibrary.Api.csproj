@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Npgsql" Version="9.2.1" />
+        <PackageReference Include="Aspire.MongoDB.Driver" Version="9.2.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+          <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\DBABookLibrary.ServiceDefaults\DBABookLibrary.ServiceDefaults.csproj" />
+        <ProjectReference Include="..\DBABookLibrary.Service\DBABookLibrary.Service.csproj" />
+        <ProjectReference Include="..\DBABookLibrary.Migrations\DBABookLibrary.Migrations.csproj" />
+        <ProjectReference Include="..\DBABookLibrary.MigrationService\DBABookLibrary.MigrationService.csproj" />
+        <ProjectReference Include="..\DBABookLibrary.Utils\DBABookLibrary.Utils.csproj" />
+    </ItemGroup>
+
+</Project>

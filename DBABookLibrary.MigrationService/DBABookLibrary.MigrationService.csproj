@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-DBABookLibrary.MigrationService-df1af21f-0468-4f94-ad1b-80d6bc152149</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBABookLibrary.Model\DBABookLibrary.Model.csproj" />
+    <ProjectReference Include="..\DBABookLibrary.ServiceDefaults\DBABookLibrary.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\DBABookLibrary.Migrations\DBABookLibrary.Migrations.csproj" />
+    <ProjectReference Include="..\DBABookLibrary.Utils\DBABookLibrary.Utils.csproj" />
+  </ItemGroup>
+</Project>
