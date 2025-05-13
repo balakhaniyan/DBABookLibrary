@@ -7,6 +7,7 @@
   <Project Path="DBABookLibrary.ReadRepository\DBABookLibrary.ReadRepository.csproj" />
   <Project Path="DBABookLibrary.Service/DBABookLibrary.Service.csproj" />
   <Project Path="DBABookLibrary.ServiceDefaults/DBABookLibrary.ServiceDefaults.csproj" />
+  <Project Path="DBABookLibrary.UnitTest/DBABookLibrary.UnitTest.csproj" />
   <Project Path="DBABookLibrary.Utils/DBABookLibrary.Utils.csproj" />
   <Project Path="DBABookLibrary.WriteRepository/DBABookLibrary.WriteRepository.csproj" />
 </Solution>
