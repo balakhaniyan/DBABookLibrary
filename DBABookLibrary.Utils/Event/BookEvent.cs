@@ -15,7 +15,7 @@ public record BookEvent
     }
 
     [SetsRequiredMembers]
-    public BookEvent(BookDto bookDto)
+    public BookEvent(CreateBookDto bookDto)
     {
         AggregateName = "Book";
         BookGuid = Guid.NewGuid().ToString();

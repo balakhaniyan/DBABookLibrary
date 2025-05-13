@@ -47,14 +47,14 @@ public class BookService(
             .Call<bool>();
     }
 
-    public async Task<bool> CreateBook(BookDto bookDto)
+    public async Task<bool> CreateBook(CreateBookDto bookDto)
     {
         var @event = new BookEvent(bookDto);
 
         return await CreateEvent(@event);
     }
 
-    public async Task<bool> EditBook(int id, BookDto bookDto)
+    public async Task<bool> EditBook(int id, CreateBookDto bookDto)
     {
         var book = await GetBooksFromReadRepository<Book?>(id);
 

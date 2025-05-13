@@ -24,7 +24,7 @@ public class BookController(ILogger<BookController> logger, IBookService bookSer
     }
 
     [HttpPost("")]
-    public async Task<ActionResult> CreateBook([FromBody] BookDto bookDto)
+    public async Task<ActionResult> CreateBook([FromBody] CreateBookDto bookDto)
     {
         if (await bookService.CreateBook(bookDto))
         {
@@ -35,7 +35,7 @@ public class BookController(ILogger<BookController> logger, IBookService bookSer
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<string>> EditBook([FromRoute] int id, [FromBody] BookDto bookDto)
+    public async Task<ActionResult<string>> EditBook([FromRoute] int id, [FromBody] CreateBookDto bookDto)
     {
         if (await bookService.EditBook(id, bookDto))
         {
